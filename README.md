@@ -45,7 +45,7 @@ public class Tractor extends Product {
         super(name, price, describe);
     }
 
-    public void suy() {
+    public void buy() {
         System.out.println(
                 "I bought a black tractor, capaciticy 2400!");
     }
