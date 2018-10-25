@@ -38,11 +38,11 @@ public class Main extends JFrame {
        przycisk1 = new JButton ("Dodaj");
        przycisk2 = new JButton ("Usuń listę");
        przycisk3 = new JButton ("Przycisk 3");
-       przycisk4 = new JButton ("Przycisk 4");
+//       przycisk4 = new JButton ("Przycisk 4");
        kontener.add(przycisk1, BorderLayout.EAST);
        kontener.add(przycisk2, BorderLayout.BEFORE_LINE_BEGINS);
        kontener.add(przycisk3, BorderLayout.SOUTH);
-       kontener.add(przycisk4, BorderLayout.AFTER_LINE_ENDS);
+//       kontener.add(przycisk4, BorderLayout.AFTER_LINE_ENDS);
       jeden = new JTextField();
       kontener.add(jeden, BorderLayout.NORTH);
         
@@ -66,13 +66,13 @@ public class Main extends JFrame {
                 model.add(pos-1,jeden.getText());
             }
         });
-      przycisk4.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                int pos = Integer.parseInt(jeden.getText());
-                model.add(pos-1,jeden.getText());
-            }
-        });
+//      przycisk4.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+//                int pos = Integer.parseInt(jeden.getText());
+//                model.add(pos-1,jeden.getText());
+//            }
+//        });
     }
     JButton przycisk1;
     JButton przycisk2;
